@@ -82,7 +82,7 @@ items:
               secretKeyRef:
                 key: database-name
                 name: model-registry-db
-          image: registry.redhat.io/rhel9/mysql-80
+          image: registry.redhat.io/rhel8/mysql-80
           imagePullPolicy: IfNotPresent
           livenessProbe:
             exec:
