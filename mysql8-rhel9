@@ -82,10 +82,6 @@ items:
               secretKeyRef:
                 key: database-name
                 name: model-registry-db
-          args:
-            - --datadir
-            - /var/lib/mysql/datadir
-            - --default-authentication-plugin=mysql_native_password
           image: registry.redhat.io/rhel9/mysql-80
           imagePullPolicy: IfNotPresent
           livenessProbe:
